@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 mars 2018, 10:02:41
+    Author     : yannis
+*/
+
+body {
+  padding-top: 3.5rem;
+}
+.txt{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+  
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; /* Change the size of the stars */
+  color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
+
+.hid{
+  display: none;
+}
