@@ -1,6 +1,5 @@
 <?php
 $url = "http://deeveadees.loc/";
-
  ?>
 <!doctype html>
 <html lang="en">
