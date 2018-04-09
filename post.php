@@ -1,5 +1,23 @@
+<?php include 'top.php';?>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row" id="lolmdr">
+
+<form id="my-form">
+    <input type="text" id="first-name" name="first-name" placeholder="First Name" />
+    <input type="text" id="last-name" name="last-name" placeholder="Last Name" />
+
+    <button type="submit">Submit</button>
+</form>
+
+          </div>
+        </div>
+      </div>
+
    
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -38,28 +56,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-$(document).ready(function () {
-    $.ajax({
-        url: "http://deeveadee.janus-developpement.com/films",
-        success : function(data){
-            loadPage(data);
-        }
-    }); 
-        
-});
-
-function loadPage(listeDeFilm){
-    for(var i = 0 ; i < listeDeFilm.length ; i++){
-        let film = listeDeFilm[i];
-        $("#lolmdr").append(
-            $('<div class="col-md-4">')
-            .append($("<div>").addClass("card mb-4 box-shadow"))
-            .append($("<h4>").addClass("card-title").text(film.titre))
-            .append($("<img />").addClass("card-img-top").attr("src",film.jaquette))
-            .append($("<p>").text(film.description).addClass("text-centered")) 
-            );
-    }
-}
 
     
 
@@ -67,3 +63,4 @@ function loadPage(listeDeFilm){
     </script>
   </body>
 </html>
+   
